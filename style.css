@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    padding: 100px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+    max-width: 800px;
+    padding-bottom: 50px;
+}
+
+main.second {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+}
+
+main.fourth {
+   padding-left: 170px;
+}
+
+
+
+.article-1 {
+    background: rgb(228, 225, 210);
+    max-width: 50%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 20px;
+    border-radius: 20px 20px 20px 0px;
+   
+}
+
+.article-2 {
+    background: rgb(96, 172, 96);
+    max-width: 50%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    border-radius: 20px 20px 0px 20px;
+}
+
+.article-3 {
+    background: rgb(96, 172, 96);
+    max-width: 50%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    border-radius: 20px 20px 0px 20px;
+}
+
+img {
+    height: auto;
+    width: 100px;
+    position: relative;
+}
+
+.picture {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.article-1::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 26px solid rgb(228, 225, 210);
+    border-bottom: 13px solid transparent;
+    margin: 0px 0 0 -45px;
+
+}
+
+.article-2::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-left: 26px solid rgb(96, 172, 96);
+    border-bottom: 13px solid transparent;
+    margin: 0px 0 0 380px;
+
+}
+
+.article-3::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-left: 26px solid rgb(96, 172, 96);
+    border-bottom: 13px solid transparent;
+    margin: 0px 0 0 200px;
+
+}
